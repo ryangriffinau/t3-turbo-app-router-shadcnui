@@ -1,0 +1,25 @@
+{
+  "name": "@askthem/utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "lint": "eslint .",
+    "lint:fix": "pnpm lint --fix",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "clsx": "^1.2.1",
+    "tailwind-merge": "^1.12.0"
+  },
+  "devDependencies": {
+    "@askthem/eslint-config": "workspace:*",
+    "@types/node": "^18.16.5",
+    "eslint": "^8.40.0",
+    "typescript": "^5.0.4"
+  }
+}

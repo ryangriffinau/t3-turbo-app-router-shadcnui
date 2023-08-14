@@ -1,0 +1,32 @@
+{
+  "name": "@askthem/api",
+  "version": "0.1.0",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "lint": "eslint .",
+    "lint:fix": "pnpm lint --fix",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@askthem/auth": "^0.1.0",
+    "@askthem/db": "^0.1.0",
+    "@trpc/client": "^10.37.1",
+    "@trpc/server": "^10.37.1",
+    "superjson": "1.13.1",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@askthem/eslint-config": "^0.2.0",
+    "eslint": "^8.46.0",
+    "typescript": "^5.1.6"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@askthem/eslint-config/base"
+    ]
+  }
+}

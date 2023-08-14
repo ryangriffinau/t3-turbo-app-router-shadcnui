@@ -1,0 +1,9 @@
+packages:
+  - apps/expo
+  - apps/web
+  - packages/api
+  - packages/auth
+  - packages/db
+  - packages/ui
+  - packages/utils
+  - packages/config/*
