@@ -1,55 +1,14 @@
-# Working Notes
-
-Google Provider: https://console.cloud.google.com/apis/credentials?project=askthem
-
-Shadcn/ui - the commit following this install would be a great time to fork for new projects.
-
-- lucide-react imports were broken due to nextjs upgrade so downgraded: pnpm update lucide-react@0.263.1 --filter @askthem/ui
-
-### Concerns
-
-- while installing Shadcn/ui, I ran `pnpm add -D tailwindcss-animate --filter tailwind-config` but it look like it installed a lot and not just adding tailwind animiate pkg to the tailwind config workspace
-  - it appears to be running ok atm
-  - may just mean a node pkg reinstall, don't think anything else could have gone wrong
-
-## TODO
-
-[x] initialised everthing with no issues - psscale, drizzle
-[x] connect google provider
-[x] install shadcn. Used the install docs & this for ref: https://github.com/braydenwerner/t3-turbo-next-app-router/tree/master
-
-- NOT THIS (BAD): https://remusrisnov.hashnode.dev/t3-stack-template-supabase-w-auth-db-and-shadcn-ui-basic-setup#heading-set-up-signintsx-and-signuptsx
-
-[] finish getting folder structure correct - remove src (not req anymore) - https://nextjs.org/docs/app/building-your-application/routing/colocation#project-organization-strategies - kept src because who cares and t3 run this
-
-- lib - next/vercel use this, so use it - stores utils,
-- components or features?
-
-[x] rename nextjs to web & expo to mobile
-[x] finish installing shadcn
-[] finalise folder structure - notice how MS Azure has set theirs up very similar https://github.com/microsoft/azurechatgpt
-[] ask Jords how I can effectively save this template for all future reference?
-[] switch to supabase db - need it for pgvector - pgvector will do the job for now - can migrate to another if performance becomes an issue
-[] build front end
-[] consider the auth switch to sb? & their auth UI?
-
-- https://supabase.com/docs/guides/auth/auth-helpers/nextjs#migration-guide
-- https://supabase.com/docs/guides/auth
-- https://supabase.com/docs/guides/auth/auth-helpers/auth-ui
-- twitter clone
-- https://supabase.com/docs/guides/getting-started/tutorials/with-nextjs#proof-key-for-code-exchange-pkce
-- ***
-
-# create-t3-turbo-app-router-drizzle
+# create-t3-turbo-app-router-shadcnui
 
 t3-turbo with next-app router
 About
 
 - Next.js (using app router, server components, typesafe server actions)
+  - includes a recommended folder structure
 - TypeScript
 - Drizzle
 - Tailwind
-- NextAuth
+- NextAuth - Google provider pre-configured
 - Turborepo
 - shadcn/ui components
 - Light / dark theme support, check out apps/web/src/app/styles/globals.css
